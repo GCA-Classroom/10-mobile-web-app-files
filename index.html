@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Web App</title>
 
-    <!-- Web app capable meta tags -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="L'Oréal Chat" />
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- App icons and manifest -->
-    <link rel="apple-touch-icon" href="img/icon-192.png" />
-    <link rel="manifest" href="manifest.json" />
+    <!-- Web-app manifest (Android, desktop Chromium, iOS 15.4+) -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Cross-platform icons -->
+    <link rel="icon" href="img/icon-192.png">
+    <link rel="apple-touch-icon" href="img/icon-192.png"> <!-- keeps iOS ≤15.3 happy -->
   </head>
 
   <body>
